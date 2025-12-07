@@ -1,0 +1,33 @@
+[project]
+name = "goit-algo-fp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.8.0",
+    "networkx>=3.2.0",
+    "numpy>=1.26.0",
+    "pandas>=2.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["task_1_linked_list", "task_2_pythagorean_tree", "task_3_dijkstra", "task_4_heap_visualization", "task_5_tree_traversal", "task_6_greedy_dp", "task_7_monte_carlo"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+]
+markers = [
+    "unit: Unit tests",
+    "slow: Slow running tests",
+]
