@@ -13,37 +13,52 @@ goit-algo-fp/
 ├── common/                          # Спільні модулі та утиліти
 │   └── __init__.py
 ├── task_1_linked_list/              # Завдання 1: Однозв'язний список
-│   ├── linked_list.py              # Базовий клас LinkedList
-│   ├── reverse.py                   # Функція реверсування
-│   ├── sort.py                      # Алгоритм сортування
-│   ├── merge.py                     # Об'єднання відсортованих списків
-│   └── main.py                      # Демонстрація та тести
+│   ├── linked_list.py              # Клас LinkedList з методами reverse, sort, merge
+│   ├── main.py                      # Демонстрація та тести
+│   ├── test_linked_list.py         # Тести базових операцій
+│   ├── test_reverse.py              # Тести реверсування
+│   ├── test_sort.py                 # Тести сортування
+│   └── test_merge.py                # Тести об'єднання
 ├── task_2_pythagorean_tree/         # Завдання 2: Фрактал дерево Піфагора
 │   ├── fractal.py                   # Рекурсивна логіка побудови
-│   ├── visualization.py             # Візуалізація з matplotlib
-│   └── main.py                      # Точка входу
+│   ├── visualization.py             # Візуалізація з matplotlib та turtle
+│   ├── arguments.py                 # Обробка аргументів командного рядка
+│   ├── main.py                      # Точка входу
+│   ├── test_fractal.py              # Тести обчислення координат
+│   ├── test_arguments.py            # Тести обробки аргументів
+│   └── test_visualization.py        # Тести візуалізації
 ├── task_3_dijkstra/                 # Завдання 3: Алгоритм Дейкстри
 │   ├── graph.py                     # Структура графа
-│   ├── binary_heap.py               # Бінарна купа для оптимізації
+│   ├── binary_heap.py               # Бінарна купа (MinHeap) для оптимізації
 │   ├── dijkstra.py                  # Реалізація алгоритму Дейкстри
-│   └── main.py                      # Демонстрація
+│   ├── main.py                      # Демонстрація
+│   ├── test_graph.py                # Тести структури графа
+│   ├── test_binary_heap.py          # Тести бінарної купи
+│   └── test_dijkstra.py             # Тести алгоритму Дейкстри
 ├── task_4_heap_visualization/       # Завдання 4: Візуалізація бінарної купи
-│   ├── binary_heap.py               # Структура бінарної купи
+│   ├── binary_heap.py               # Структура бінарної купи (BinaryHeap, Node)
 │   ├── visualization.py             # Візуалізація з networkx та matplotlib
-│   └── main.py                      # Створення та відображення купи
+│   ├── main.py                      # Створення та відображення купи
+│   └── test_binary_heap.py          # Тести бінарної купи
 ├── task_5_tree_traversal/           # Завдання 5: Обхід бінарного дерева
 │   ├── binary_tree.py               # Структура бінарного дерева
 │   ├── traversal.py                 # DFS та BFS (без рекурсії)
 │   ├── visualization.py             # Візуалізація з кольоровим кодуванням
-│   └── main.py                      # Демонстрація обходів
+│   ├── main.py                      # Демонстрація обходів
+│   ├── test_traversal.py            # Тести обходів та кольорів
+│   └── test_colors.py                # Тести генерації кольорів
 ├── task_6_greedy_dp/                # Завдання 6: Жадібний алгоритм та ДП
 │   ├── greedy.py                    # Жадібний алгоритм вибору їжі
 │   ├── dynamic_programming.py       # Алгоритм динамічного програмування
-│   └── main.py                      # Порівняння результатів
+│   ├── main.py                      # Порівняння результатів
+│   ├── test_greedy.py               # Тести жадібного алгоритму
+│   └── test_dynamic_programming.py  # Тести динамічного програмування
 └── task_7_monte_carlo/              # Завдання 7: Метод Монте-Карло
     ├── monte_carlo.py               # Симуляція кидків кубиків
     ├── visualization.py             # Таблиці та графіки ймовірностей
-    └── main.py                      # Порівняння з аналітичними розрахунками
+    ├── main.py                      # Порівняння з аналітичними розрахунками
+    ├── test_monte_carlo.py          # Тести симуляції Монте-Карло
+    └── test_analytical.py           # Тести аналітичних розрахунків
 ```
 
 ## 🚀 Швидкий старт
